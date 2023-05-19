@@ -3,22 +3,26 @@
 </div>  
   
 
-### <div align="center">Hello! My name is Matúš and I believe, that one day i will be great developer 👨‍💻! For this moment, I just learn because it is only way how to change my dream in to reality🙂</div>  
+### <div align="center">Hello! My name is Matúš and I believe, that one day i will be great developer 👨‍💻! For this moment, I just learn because it is only way how to change my dream in to reality🙂</div> 
+
+### Installation  
+- 🛠️ Because it is running on Sanctum SPA just add  SESSION_DOMAIN=localhost, SANCTUM_STATEFUL_DOMAINS=localhost:8000, SESSION_DRIVER=cookie to your env, and in cors.php add 'paths' => ['api/*','/login','/logout', 'sanctum/csrf-cookie'], 'supports_credentials' => true. And last step is just uncomment this line \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class, in kernel. php. And thats all.
+                                                        
   
 
-- 🔭 That's it, ladies and gentlmens, this is my first e-commerce ever! Yes, it's not perfect, still in progress, but i hope that this project can represent my knowledge of laravel 🙂  
+- 🔭 I hope that this project can represent my knowledge of laravel and new knowledge about Vue 🙂  
   
 
 
 
 ### About Project  
-- 🛠️ Small e-commerce with logic for admin and user.   
+- 🛠️ Small app for service.   
   
 
-- ❓ What it does? I hope everything, what's needed. You can add categories, subcategories of items, items and when something important happend, admin receive message about it in admin panel and customer receive mail about his order.  
+- ❓ What it does? After registration, you can add, update, delete car and item.  
   
 
-- 🏃‍♂️ It is running on Laravel and use package like spatie, fullcalendar and more...  
+- 🏃‍♂️ It is running on Laravel and use Vue...  
   
 
 <br/>  
@@ -36,6 +40,8 @@
 <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="50" /></a>  
 <a href="https://www.javascript.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50" /></a>  
 <a href="https://jquery.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/jquery.png" alt="jQuery" height="50" /></a>  
+</div>
+<a href="https://react.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/react.png" alt="react" height="50" /></a>  
 </div>
 
 </td><td valign="top" width="33%">
