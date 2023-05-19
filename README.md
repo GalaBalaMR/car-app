@@ -6,7 +6,12 @@
 ### <div align="center">Hello! My name is Matúš and I believe, that one day i will be great developer 👨‍💻! For this moment, I just learn because it is only way how to change my dream in to reality🙂</div> 
 
 ### Installation  
-- 🛠️ Because it is running on Sanctum SPA just add  SESSION_DOMAIN=localhost, SANCTUM_STATEFUL_DOMAINS=localhost:8000, SESSION_DRIVER=cookie to your env, and in cors.php add 'paths' => ['api/*','/login','/logout', 'sanctum/csrf-cookie'], 'supports_credentials' => true. And last step is just uncomment this line \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class, in kernel. php. And thats all.
+- 🛠️ Because it is running on Sanctum SPA just add  
+SESSION_DOMAIN=localhost, 
+SANCTUM_STATEFUL_DOMAINS=localhost:8000, 
+SESSION_DRIVER=cookie to your env, 
+and in cors.php add 'paths' => ['api/*','/login','/logout', 'sanctum/csrf-cookie'], 'supports_credentials' => true. 
+And last step is just uncomment this line \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class, in kernel. php. And thats all.
                                                         
   
 
