@@ -1,6 +1,7 @@
 <template>
-    <div class="">
-        <h1 class="text-center" v-if="isLogged">Cars</h1>
+    <div v-if="!isLogged" class="text-center"><h1>You are not logged in.</h1></div>
+    <div class="" v-if="isLogged">
+        <h1 class="text-center">Cars</h1>
         <p class="text-center" v-if="user">{{ user.name }}</p>
         <div class="d-flex justify-content-around">
             <button class="btn btn-warning" @click="isHiddenCar = !isHiddenCar">
@@ -107,7 +108,7 @@
                 </button>
             </form>
         </div>
-        <div v-if="isLogged" class="d-flex flex-column">
+        <div class="d-flex flex-column">
             <CarItem
                 v-for="car in cars"
                 :key="car.id"
