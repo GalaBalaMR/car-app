@@ -74,18 +74,26 @@
                     />
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">For which car(id)</label>
-                    <input
+                    <label class="form-label">For which car</label>
+                    <!-- <input
                         type="text"
                         class="form-control"
                         name="car_id"
                         v-model="car_id"
-                    />
+                    /> -->
+                    <select
+                        class="form-select"
+                        name="car_id"
+                        v-model="car_id"
+                    >
+                        <option v-for="car in cars" :value="car.id">{{ car.name }}</option>
+                    </select>
                 </div>
                 <div class="mb-3">
                     <label for="item-reg" class="form-label"
-                        >Serial number{{ car_id }}</label
+                        >Serial number</label
                     >
+
                     <input
                         type="text"
                         class="form-control"
