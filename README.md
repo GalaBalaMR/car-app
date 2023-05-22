@@ -9,9 +9,7 @@
 - 🛠️ Because it is running on Sanctum SPA just add  
 SESSION_DOMAIN=localhost, 
 SANCTUM_STATEFUL_DOMAINS=localhost:8000, 
-SESSION_DRIVER=cookie to your env, 
-and in cors.php add 'paths' => ['api/*','/login','/logout', 'sanctum/csrf-cookie'], 'supports_credentials' => true. 
-And last step is just uncomment this line \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class, in kernel. php. And thats all.
+SESSION_DRIVER=cookie to your env. And thats all.
                                                         
   
 
