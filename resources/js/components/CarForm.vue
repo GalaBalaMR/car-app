@@ -30,6 +30,7 @@
                 class="form-check-input"
                 name="is_registered"
                 :checked="is_registered"
+                v-model="is_registered"
                 @click="isHiddenInput = !isHiddenInput"
             />
             <label class="form-check-label">Is registered?</label>
